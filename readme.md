@@ -8,6 +8,8 @@
 - opencv
 
 ## Fintune vvg layer's
+- Download original openpose model at https://www.dropbox.com/s/llpxd14is7gyj0z/model.h5
+- Put downloaded [model.h5](https://www.dropbox.com/s/llpxd14is7gyj0z/model.h5) in this project folder (`finetune_op_vgg` folder)
 ### Step 1:
 - run `python Step1TrainClassifier.py`. Default: A `step1.h5` file will be created to store weights of fine-tuned model.
 ### Step 2:
