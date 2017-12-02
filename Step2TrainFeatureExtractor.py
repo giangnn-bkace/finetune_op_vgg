@@ -19,12 +19,13 @@ num_train_samples = 2173
 num_test_samples = 21
 num_iteration = 100
 
-lock = {'op10_conv4_1', 'op10_conv4_2', 'op10_conv4_3_CPM', 'op10_conv4_4_CPM', 'predictions'}
-
 IMG_WIDTH = 224
 IMG_HEIGHT = 224
 BATCH_SIZE = 1
 CLASS_MODE = 'binary'
+
+
+lock = {'op10_conv4_1', 'op10_conv4_2', 'op10_conv4_3_CPM', 'op10_conv4_4_CPM', 'predictions'}
 
 from_op = dict()
 from_op['op10_conv1_1'] = 'conv1_1'
