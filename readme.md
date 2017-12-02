@@ -15,8 +15,8 @@
 >**Default:** A `step1.h5` file will be created to store weights of fine-tuned model.
 ### Step 2:
 - run `python Step2TrainFeatureExtractor.py`. 
->**Default:** A `step2.h5` file will be created to store weights of fine-tuned model.<br />
-To lock a layer, add it name to `lock` list in `Step2TrainFeatureExtractor.py`.
+>**Default:** A `step2.h5` file will be created to store weights of fine-tuned model.
+<br />To lock a layer, add it name to `lock` list in `Step2TrainFeatureExtractor.py`.
 ![Lock layers](https://github.com/giangnn-bkace/finetune_op_vgg/blob/master/LockLayers.JPG "Lock layers")
 ### Test fine-tuned model:
 - run `test_finetuned_model.py`. 
