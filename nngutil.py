@@ -54,7 +54,10 @@ def get_op10_model(weight_decay):
 	op10_part = op10_block(img_normalized, weight_decay)
 	
 	op10_model_flat = Flatten(name='flatten')(op10_part)
-	op10_model_out = Dense(1, activation='sigmoid', name='predictions')(op10_model_flat)
+	op10_model_dense1 = Dense(1000, activation='relu', name='dense_1')(op10_model_flat)
+	op10_model_dense2 = Dense(1000, activation='relu', name='dense_2')(op10_model_dense1)
+	op10_model_dense3 = Dense(1000, activation='relu', name='dense_3')(op10_model_dense2)
+	op10_model_out = Dense(1, activation='sigmoid', name='predictions')(op10_model_dense3)
 	
 	op10_model = Model(img_input, op10_model_out)
 	return op10_model
