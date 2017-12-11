@@ -25,8 +25,8 @@ BATCH_SIZE = 1
 CLASS_MODE = 'binary'
 
 
-lock = {'op10_conv4_1', 'op10_conv4_2', 'op10_conv4_3_CPM', 'op10_conv4_4_CPM', 'predictions'}
-
+lock = {'op10_conv4_4_CPM','dense_1', 'dense_2', 'dense_3', 'predictions'}
+'''
 from_op = dict()
 from_op['op10_conv1_1'] = 'conv1_1'
 from_op['op10_conv1_2'] = 'conv1_2'
@@ -40,7 +40,7 @@ from_op['op10_conv4_1'] = 'conv4_1'
 from_op['op10_conv4_2'] = 'conv4_2'
 from_op['op10_conv4_3_CPM'] = 'conv4_3_CPM'
 from_op['op10_conv4_4_CPM'] = 'conv4_4_CPM'
-
+'''
 
 	
 if __name__ == "__main__":
