@@ -12,7 +12,7 @@ We attempt to fine-tune open-pose model (for human) for chimpanzee pose estimati
 ### Objective
 ![Objective](https://github.com/giangnn-bkace/finetune_op_vgg/blob/master/images/objective.JPG)
 
-## Prerequired:
+## Packages:
 - tensorflow
 - keras
 - numpy
