@@ -6,6 +6,9 @@ We attempt to fine-tune open-pose model (for human) for chimpanzee pose estimati
 ### An example of apply the current OpenPose model for human pose, face, hand recognition
 ![pose recognition](https://github.com/giangnn-bkace/finetune_op_vgg/blob/master/images/pose-example1.gif)
 
+### NOT good for chimpanzee
+![chim](https://github.com/giangnn-bkace/finetune_op_vgg/blob/master/images/direct.jpg)
+
 ### Objective
 ![Objective](https://github.com/giangnn-bkace/finetune_op_vgg/blob/master/images/objective.JPG)
 
