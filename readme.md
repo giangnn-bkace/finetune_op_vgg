@@ -1,7 +1,13 @@
 # finetune_op_vgg
 ## Introduction
+![What is doing?](https://github.com/giangnn-bkace/finetune_op_vgg/blob/master/images/Finetune.JPG)
+We attempt to fine-tune open-pose model (for human) for chimpanzee pose estimation.
 
+### An example of apply the current OpenPose model for human pose, face, hand recognition
+![pose recognition](https://github.com/giangnn-bkace/finetune_op_vgg/blob/master/images/pose-example1.gif)
 
+### Objective
+![Objective](https://github.com/giangnn-bkace/finetune_op_vgg/blob/master/images/objective.JPG)
 
 ## Prerequired:
 - tensorflow
@@ -10,7 +16,11 @@
 - scipy
 - opencv
 
+## OpenPose model architecture
+![OpenPose architecture](https://github.com/giangnn-bkace/finetune_op_vgg/blob/master/images/openpose_architecture.png)
+
 ## Fintune vvg layer's
+![Finetune vgg](https://github.com/giangnn-bkace/finetune_op_vgg/blob/master/images/vgg.png)
 - Download original openpose model at https://www.dropbox.com/s/llpxd14is7gyj0z/model.h5
 - Put downloaded [model.h5](https://www.dropbox.com/s/llpxd14is7gyj0z/model.h5) in this project folder (`finetune_op_vgg` folder)
 ### Step 1:
@@ -24,3 +34,8 @@
 ### Test fine-tuned model:
 - run `test_finetuned_model.py`. 
 >**Default:** Input images are from `images` folder. Output images will be saved in `result` folder.
+
+## Results
+![result1](https://github.com/giangnn-bkace/finetune_op_vgg/blob/master/images/fine-tune_result1.JPG)
+
+![result2](https://github.com/giangnn-bkace/finetune_op_vgg/blob/master/images/fine-tune_result2.JPG)
